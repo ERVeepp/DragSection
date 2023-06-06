@@ -1,0 +1,186 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.logo[data-v-64a3bf38] {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo[data-v-64a3bf38]:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vue[data-v-64a3bf38]:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
+}
+.c-weektime[data-v-c0ebf1bb] {
+  min-width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.c-schedue[data-v-c0ebf1bb] {
+  background: #598fe6;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.c-schedue-notransi[data-v-c0ebf1bb] {
+  transition: width 0.12s ease, height 0.12s ease, top 0.12s ease, left 0.12s ease;
+}
+.c-weektime-table[data-v-c0ebf1bb] {
+  width: 100%;
+  border-collapse: collapse;
+}
+.c-weektime-table th[data-v-c0ebf1bb] {
+  vertical-align: inherit;
+  font-weight: bold;
+}
+.c-weektime-table tr[data-v-c0ebf1bb] {
+  height: 16px;
+  border: 0 !important;
+}
+.c-weektime-table tr[data-v-c0ebf1bb], .c-weektime-table td[data-v-c0ebf1bb], .c-weektime-table th[data-v-c0ebf1bb] {
+  user-select: none;
+  border: 1px solid #dee4f5;
+  text-align: center;
+  min-width: 12px;
+  height: 18px;
+  width: 4.1666666667%;
+  line-height: 12px;
+  transition: background 0.2s ease;
+}
+.c-weektime-table .weektime-atom-item-top[data-v-c0ebf1bb] {
+  width: 4.1666666667%;
+}
+.c-weektime-table .c-weektime-head[data-v-c0ebf1bb] {
+  font-size: 12px;
+}
+.c-weektime-table .c-weektime-head .week-td[data-v-c0ebf1bb] {
+  width: 4.1666666667%;
+}
+.c-weektime-table .c-weektime-body[data-v-c0ebf1bb] {
+  font-size: 12px;
+}
+.c-weektime-table .c-weektime-body td.weektime-atom-item[data-v-c0ebf1bb] {
+  user-select: unset;
+  background-color: #f5f5f5;
+}
+.c-weektime-table .c-weektime-body td.ui-selected[data-v-c0ebf1bb] {
+  background-color: #409EFF;
+}
+.c-weektime-table .c-weektime-preview[data-v-c0ebf1bb] {
+  line-height: 2.4em;
+  padding: 10px;
+  font-size: 14px;
+}
+.c-weektime-table .c-weektime-preview .c-weektime-con[data-v-c0ebf1bb] {
+  line-height: 46px;
+  user-select: none;
+}
+.c-weektime-table .c-weektime-preview .c-weektime-time[data-v-c0ebf1bb] {
+  text-align: left;
+  line-height: 2.4em;
+}
+.c-weektime-table .c-weektime-preview .c-weektime-time p[data-v-c0ebf1bb] {
+  max-width: 625px;
+  line-height: 1.4em;
+  word-break: break-all;
+  margin-bottom: 8px;
+}
+.c-min-table tr[data-v-c0ebf1bb], .c-min-table td[data-v-c0ebf1bb], .c-min-table th[data-v-c0ebf1bb] {
+  min-width: 24px;
+}
+.g-clearfix[data-v-c0ebf1bb]:after, .g-clearfix[data-v-c0ebf1bb]:before {
+  clear: both;
+  content: " ";
+  display: table;
+}
+.g-pull-left[data-v-c0ebf1bb] {
+  float: left;
+}
+.g-pull-right[data-v-c0ebf1bb] {
+  float: right;
+}
+.g-tip-text[data-v-c0ebf1bb] {
+  color: #999;
+}
