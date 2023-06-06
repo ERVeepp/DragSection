@@ -10,10 +10,17 @@
 
 <script setup lang="ts">
 import DragSection from '@/components/DragSection/index.vue'
-// import DragSection from 'dragsection'
-console.log(DragSection)
 import sectionData from '@/utils/section_data'
 import { splicing, joinling } from '@/utils/section_data_fn'
+const emit = defineEmits(['up'])
+const props = defineProps({
+  select: {
+    default: () => {
+      return ['1_2']
+    },
+    type: Array
+  }
+})
 
 let mySectionData = reactive(sectionData)
 const mult_timeRange = computed(() => {
@@ -43,7 +50,14 @@ const handleMySectionUse = computed(() => {
 })
 
 let handleMySectionData = computed(() => {
-  return splicing(mySectionData, [])
+  return splicing(mySectionData, props.select)
+})
+
+watch(() => mult_timeRange, (newVal, oldVal) => {
+  let data = newVal.value[0].child
+  emit('up', data)
+}, {
+  deep: true
 })
 
 </script>

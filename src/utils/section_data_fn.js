@@ -29,9 +29,7 @@ const splicing = (data, select) => {
     let b = Number(arr[1])
     for (let index = a; index <= b; index++) {
       const element = index
-      if (element === 0) {
-        finalBigArr.push(element)
-      }
+      finalBigArr.push(element)
     }
   })
   data.map(ele => {
