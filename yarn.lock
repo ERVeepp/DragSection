@@ -1010,6 +1010,14 @@ dragsection@^0.0.4:
     dragsection "^0.0.2"
     vue "^3.2.47"
 
+dragsection@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/dragsection/-/dragsection-0.0.8.tgz"
+  integrity sha512-d2C9P0tRQY7KSI9Fe0TPAqQ+PGsa/or37qEAAMbPxRd+YnsKV637YCb+nGdOaA/dCj4MB+M2hzV4F/KymT43vQ==
+  dependencies:
+    dragsection "^0.0.4"
+    vue "^3.2.47"
+
 eastasianwidth@^0.2.0:
   version "0.2.0"
   resolved "https://repo.huaweicloud.com/repository/npm/eastasianwidth/-/eastasianwidth-0.2.0.tgz"

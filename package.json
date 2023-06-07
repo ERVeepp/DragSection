@@ -1,10 +1,20 @@
 {
   "name": "dragsection",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.8",
   "type": "module",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "./dist/dragsection.umd.js",
+  "module": "./dist/dragsection.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/dragsection.es.js",
+      "require": "./dist/dragsection.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -13,7 +23,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "dragsection": "^0.0.4",
+    "dragsection": "^0.0.8",
     "vue": "^3.2.47"
   },
   "devDependencies": {
@@ -32,8 +42,7 @@
     "vue-tsc": "^1.4.2"
   },
   "files": [
-    "lib",
-    "es",
+    "dist/*",
     "README",
     "LICENSE"
   ],
