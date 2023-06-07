@@ -9,7 +9,7 @@
 // import DragSection from "../dist/dragsection.es.js";
 // import "../dist/style.css";
 import DragSection from 'dragsection'
-let arr = reactive(['1_5'])
+let arr = reactive(['1_5', '8_16'])
 let upFn = (data) => {
   console.log(data)
 }
