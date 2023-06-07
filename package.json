@@ -1,7 +1,7 @@
 {
   "name": "dragsection",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.6",
   "type": "module",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -13,7 +13,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "dragsection": "^0.0.2",
+    "dragsection": "^0.0.4",
     "vue": "^3.2.47"
   },
   "devDependencies": {

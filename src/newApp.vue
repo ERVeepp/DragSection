@@ -6,10 +6,9 @@
 
 </template>
 <script setup lang="ts">
-// import DragSection from "../dist/dragsection.es.js";
-// import "../dist/style.css";
-import DragSection from 'dragsection'
-let arr = reactive(['1_5', '8_16'])
+import DragSection from "../es/packages/index.js";
+import  "../es/style.css";
+let arr = reactive(['1_5', '8_10'])
 let upFn = (data) => {
   console.log(data)
 }
